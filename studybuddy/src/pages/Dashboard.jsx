@@ -18,7 +18,7 @@ export default function Dashboard() {
 
       <main className="dashboard">
         <h1 className="dashboard-title">
-          Dashboard 🚀
+          Take your focus to the next level 🚀
         </h1>
 
         {/* TOP */}
