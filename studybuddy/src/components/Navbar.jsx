@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 import { useAuth } from "../context/AuthContext";
 
 export default function Navbar() {
@@ -6,31 +7,39 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="navbar-left">
-        <h2>StudyBuddy 📚</h2>
-      </div>
+
+      <h2>StudyBuddy ✨</h2>
 
       <div className="navbar-right">
-        {user && (
-          <>
-            <Link to="/">Dashboard</Link>
 
+        <Link to="/">
+          Dashboard
+        </Link>
+
+        <Link to="/documentation">
+          Documentation
+        </Link>
+
+        {user ? (
+          <>
             <button onClick={logout}>
               Logout
             </button>
           </>
-        )}
-
-        {!user && (
+        ) : (
           <>
-            <Link to="/login">Login</Link>
+            <Link to="/login">
+              Login
+            </Link>
 
             <Link to="/register">
               Register
             </Link>
           </>
         )}
+
       </div>
+
     </nav>
   );
 }
