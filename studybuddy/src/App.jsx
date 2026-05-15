@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
 import { useAuth } from "./context/AuthContext";
 
@@ -11,14 +11,14 @@ import ProtectedRoute from "./components/ProtectedRoute";
 export default function App() {
   return (
 <AuthProvider>
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route  path="/" element={<ProtectedRoute><Dashboard /></ProtectedRoute>}/>
       <Route path="/tasks" element={<Tasks />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 </AuthProvider>
   );
 }
