@@ -18,6 +18,9 @@ StudyBuddy on tuottavuuteen keskittyvä verkkosovellus,
 joka auttaa opiskelijoita hallitsemaan opiskeluaan 
 tehtävien seurannan, Pomodoro-ajastimen ja 
 motivoivan palautteen avulla.
+<br>
+Sivulla on käytetty ZenQuotes REST API tarjoamia motivaatio lainauksia jotka valikoituvat satunnaisesti.
+</br>
           </p>
         </div>
 
