@@ -7,7 +7,7 @@ export default function Documentation() {
 
       <main className="dashboard">
         <h1 className="dashboard-title">
-          Documentation 📚
+          Dokumentointi 📚
         </h1>
 
         <div className="card">
